@@ -1,19 +1,81 @@
+@media (min-width: 768px) {
+  #desktop-nav {
+    display: flex !important;
+  }
+  #cta {
+    display: flex !important;
+  }
+  #mobile-menu-btn {
+    display: none !important;
+  }
+  #mobile-menu {
+    display: none !important;
+  }
+}
+html {
+	scroll-behavior: smooth;
+}
 body {
-  font-family: sans-serif;
+  background-color: #ffffff;
+	color: #444444;
+	font-family: 'Inter', sans-serif;
   margin: 0;
+	padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
+.desktop-nav {
+	display: none;
+	align-items: center;
+	gap: 2rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.cta {
+	display: none;
+	align-items: center;
+  padding: 0.625rem 1.25rem; 
+  font-size: 0.875rem;
+}
+.btn-lime {
+	background-color: #E1E784;
+	color: #444444;
+	font-weight: 600;
+	border-radius: 9999px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	display: inline-block;
+  padding: 0.625rem 1.25rem; 
+  font-size: 0.875rem;
+}
+.btn-lime:hover {
+	opacity: 0.9;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
 
+.nav-link {
+	color: #444444;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+.nav-link:hover {
+	color: #00B4D8;
+}
+.nav-link-active {
+	color: #00B4D8;
+	font-weight: 600;
+	text-decoration: none;
+}
 h1 {
+  text-align: center;
   margin: 0;
   font-size: 2rem;
 }
@@ -22,9 +84,14 @@ h1 a {
   color: black;
   text-decoration: none;
 }
+.logo-img {
+  max-height: 40px;
+	height: auto;
+	display: block;
+}
 
 .button:hover {
-  background-color: #1d4ed8;
+  background-color: #00B4D8;
 }
 
 main {
@@ -41,18 +108,59 @@ main {
   margin-top: 2rem;
 }
 
+.mission-card {
+	box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(to bottom right, #ffffff, #ffffff, rgba(0, 180, 216, 0.05), #ffffff, #ffffff,  rgba(203, 174, 198, 0.2));
+  text-align: center;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 0px;
+  font-size: 1.5em;
+}
+
+.mission-card h2 {
+  text-align: left;
+}
+.links {
+  display: flex;
+  list-style-type: none;     
+  padding: 1rem;
+  margin: 0;
+  gap: 15px;
+
+}
+.links li a {
+  background-color: #444444;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.links li a:hover {
+  background-color: #444444;
+  color: #00B4D8;
+}
+.core-values {
+  text-align: left;
+}
 .values {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
 }
 
 .value-card {
-  background-color: #f3f4f6;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	background: linear-gradient(to bottom right, #ffffff, #ffffff, rgba(225, 231, 132, 0.05), #ffffff, #ffffff,  rgba(203, 174, 198, 0.2));
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
+  transition: all 0.2s ease;
 }
-
+.value-card:hover { 
+	box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(to bottom right, #ffffff, rgba(225, 231, 132, 0.05), #ffffff, #ffffff,  rgba(203, 174, 198, 0.2));
+}
 .value-card h4 {
   margin: 0 0 0.5rem 0;
 }
@@ -62,7 +170,7 @@ main {
 }
 
 footer {
-  background-color: #1f2937;
+  background-color: #444444;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -79,6 +187,7 @@ footer {
 
 .footer-section h3 {
   margin: 0 0 0.5rem 0;
+  color: #00B4D8
 }
 
 .footer-section a {
@@ -122,7 +231,7 @@ footer {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background-color: #2563eb;
+  background-color: #CBAEC6;
   color: white;
   font-size: 3rem;
   font-weight: bold;
@@ -138,7 +247,7 @@ footer {
 }
 
 .team-card .role {
-  color: #2563eb;
+  color: #00B4D8;
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0.5rem 0 1rem;
