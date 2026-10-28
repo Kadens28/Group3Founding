@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+main {
+  flex: 1;
+}
+
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.about section {
+  margin-top: 2rem;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.value-card {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.value-card h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.value-card p {
+  margin: 0;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-section h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.footer-section a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.sources ul {
+  padding-left: 1.25rem;
+}
+
+.sources a {
+  color: #2563eb;
+}
