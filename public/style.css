@@ -168,8 +168,14 @@ main {
 .value-card p {
   margin: 0;
 }
-.highlight {
+.highlight-yellow {
   background-color: #E1E784;
+  padding: 0.75rem;
+  border-radius: 100px;
+  font-size: 0.5em;
+}
+.highlight-red {
+  background-color: #CBAEC6;
   padding: 0.75rem;
   border-radius: 100px;
   font-size: 0.5em;
@@ -236,7 +242,7 @@ footer {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background-color: #CBAEC6;
+  background-color: #444444;
   color: white;
   font-size: 3rem;
   font-weight: bold;
@@ -263,6 +269,47 @@ footer {
   font-size: 1.1rem;
 }
 
+.listing section {
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, rgba(68, 68, 68, 0), rgba(68, 68, 68, 0.25), rgba(68, 68, 68, 0));
+  border-image-slice: 1;
+}
+.listing h1 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+.listing h2 {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+.listing p {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.listing ul {
+  margin-top: 0px;
+}
+.listing li {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+  list-style-type: square;
+}
+.listing ul.two-column {
+  margin-top: 0px;
+  column-count: 2;
+  column-gap: normal;
+}
+.listing li::marker {
+  color: #00B4D8;
+}
+.listing .cta {
+  align: center;
+}
 @media (max-width: 700px) {
   .team {
     grid-template-columns: 1fr;
